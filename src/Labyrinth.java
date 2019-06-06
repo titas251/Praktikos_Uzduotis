@@ -146,11 +146,9 @@ public class Labyrinth {
 
     //Metodas atspausdina kelią iki išėjimo
     private static void printPath(List<Cell> path) {
-        int count = 0;
         for (Cell cell : path) {
-            count++;
             System.out.println(cell.coordinateX + " " + cell.coordinateY);
         }
-        System.out.println("Žingsnių kiekis: " + (count - 1));
+        System.out.println("Žingsnių kiekis: " + (path.size()-1));
     }
 }
